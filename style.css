@@ -306,6 +306,12 @@ body {
     margin-left: 1.5em;
   }
 }
+@media (max-width: 600px){
+  .even-columns{
+    width: 100%;
+    padding-inline: 1em;
+  }
+}
 
 /* PHILOSOPHY */
 .philosophy-stats {
@@ -669,6 +675,9 @@ p.bolded {
   }
 }
 @media (max-width: 860px) {
+  .paragraph1{
+    padding-inline: 1em;
+  }
   .picture4 {
     width: 50%;
     margin: 0 auto;
