@@ -801,6 +801,7 @@ p.bolded {
 }
 .content {
   width: 50%;
+
 }
 .title {
   font-size: 2rem;
@@ -813,6 +814,7 @@ p.bolded {
 .question {
   font-size: 1.5rem;
   font-weight: bold;
+  cursor: pointer;
   padding: 10px 0px;
   border-bottom: solid 2px white;
   position: relative;
