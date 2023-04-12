@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesg.css" />
+    <link rel="stylesheet" type="text/css" href="stylesg.css" />
     <link rel="stylesheet" href="article.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
+    <!-- HEADER -->
+    <div class="header" id="header">
       <div class="logo">
         <img
           src="slike/joystick_red.png"
@@ -27,11 +28,14 @@
           <li><a href="#događaji">DOGAĐAJI</a></li>
           <li><a href="#media">DRUGI O NAMA</a></li>
           <li><a href="#kontakt">KONTAKT</a></li>
-          <div id="close-btn">X</div>
+
+          <div id="close-btn"><img src="slike/rectangle-xmark.png" /></div>
         </ul>
-        <button id="tickets">ULAZNICE</button>
+        <div class="button1" id="btn">
+          <button id="tickets">ULAZNICE</button>
+        </div>
       </div>
-      <div id="menu-btn">&#9776;</div>
+      <div id="menu-btn"><img src="slike/bars-sort(1).png" /></div>
     </div>
     <div class="blog-space">
       <div class="naslov">
@@ -88,67 +92,27 @@
         <div class="logo-foot">
           <img src="slike/logo_red.png" id="footlog" />
         </div>
-        <div class="mobile">
-          <div class="summary">
-            <h3>Game Changer</h3>
-            <a href="index.html">POČETNA</a>
-            <a href="index.html">O NAMA</a>
-            <a href="index.html">BLOG</a>
-            <a href="index.html">KONTAKT</a>
-          </div>
-          <div class="products-summary">
-            <h3>Konferencije</h3>
-            <a href="index.html">ST.ART - UP </a>
-            <a href="index.html">GAME CHANGER KONFERENCIJA VOL 2.</a>
-            <a href="index.html">BOARDROOM FINTECH FORUM </a>
-          </div>
-        </div>
 
         <div class="join">
           <div class="social-links" id="kontakt">
-            <h3>Kontakt</h3>
             <div class="socials">
-              <div class="first2">
-                <a
-                  href="https://www.instagram.com/codehustling/"
-                  target="_blank"
-                  ><i class="fa fa-brands fa-instagram"></i
-                ></a>
-                <a href="mailto:codehustling@gmail.com" target="_blank"
-                  ><i class="fa fa-envelope"></i
-                ></a>
-              </div>
-              <div class="second2">
-                <a
-                  href="https://www.linkedin.com/company/networking-room/"
-                  target="_blank"
-                  ><i class="fa fa-brands fa-linkedin"></i
-                ></a>
-
-                <a
-                  href="https://www.paypal.com/paypalme/FKallaku"
-                  target="_blank"
-                  ><i class="fa fa-brands fa-paypal"></i
-                ></a>
-              </div>
-            </div>
-            <div class="mobile-socials">
-              <a href="https://www.instagram.com/codehustling/" target="_blank"
+              <a
+                href="https://www.instagram.com/gamechanger.hr/"
+                target="_blank"
                 ><i class="fa fa-brands fa-instagram"></i
               ></a>
-
-              <a href="mailto:codehustling@gmail.com" target="_blank"
+              <a href="mailto:matijavuckovic@gmail.com" target="_blank"
                 ><i class="fa fa-envelope"></i
               ></a>
 
               <a
-                href="https://www.linkedin.com/company/networking-room/"
+                href="https://www.linkedin.com/company/gamechangerhr/?trk=public_post_reshare-text&originalSubdomain=hr"
                 target="_blank"
                 ><i class="fa fa-brands fa-linkedin"></i
               ></a>
 
-              <a href="https://www.paypal.com/paypalme/FKallaku" target="_blank"
-                ><i class="fa fa-brands fa-paypal"></i
+              <a href="https://www.facebook.com/gamechanger.hr/" target="_blank"
+                ><i class="fa fa-brands fa-facebook"></i
               ></a>
             </div>
           </div>
@@ -169,21 +133,47 @@
       var menubutton = document.getElementById("menu-btn");
       var menuclose = document.getElementById("close-btn");
       var navigationlist = document.getElementById("navigation-lista");
+      var header = document.getElementById("header");
+      var mobilelogo = document.getElementById("mobile_logo");
+      var btn = document.getElementById("btn");
 
       menubutton.onclick = function () {
         navigationlist.style.display = "flex";
+        header.style.flexDirection = "column";
         menubutton.style.display = "none";
         menuclose.style.display = "block";
+        mobilelogo.style.width = "50%";
+        header.style.paddingBlock = "2rem";
+        btn.style.display = "flex";
       };
       menuclose.onclick = function () {
         navigationlist.style.display = "none";
+        header.style.flexDirection = "row";
         menubutton.style.display = "block";
         menuclose.style.display = "none";
+        mobilelogo.style.width = "100%";
+        header.style.paddingBlock = "0rem";
+        btn.style.display = "none";
       };
 
       var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1000,
         speedAsDuration: true,
+      });
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      AOS.init();
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".team-box"), {
+        max: 25,
+        speed: 1500,
       });
     </script>
   </body>
