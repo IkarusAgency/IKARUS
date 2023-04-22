@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script defer src="js/script.js"></script>
+    <!-- SPLIDE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="splide/splide-4.1.3/dist/css/splide.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="splide/splide-4.1.3/dist/js/splide.min.js"
+    ></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/32c0f3b9ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- DEAFULTS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="stylesg.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gamechanger</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header" id="header">
+      <div class="logo">
+        <img
+          src="slike/joystick_red.png"
+          alt="Gamechanger Logo"
+          id="rotating_logo"
+        />
+        <img src="slike/logo_red.png" alt="Gamechanger Logo" id="mobile_logo" />
+      </div>
+      <div class="menu">
+        <ul id="navigation-lista">
+          <li><a href="index.html">POČETNA</a></li>
+          <li><a href="about.html">O NAMA</a></li>
+          <li><a href="#brojke">BROJKE</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#događaji">DOGAĐAJI</a></li>
+          <li><a href="#media">DRUGI O NAMA</a></li>
+          <li><a href="#kontakt">KONTAKT</a></li>
+
+          <div id="close-btn"><img src="slike/rectangle-xmark.png" /></div>
+        </ul>
+        <div class="button1" id="btn">
+          <button id="tickets">ULAZNICE</button>
+        </div>
+      </div>
+      <div id="menu-btn"><img src="slike/bars-sort(1).png" /></div>
+    </div>
+
+    <div class="short-info">
+      <p>Konferencije 2023 : 3</p>
+      <p>|</p>
+      <p>Broj Posjetitelja : 1000+</p>
+      <p>|</p>
+      <p>Broj Govornika : 50+</p>
+      <p>|</p>
+      <p>Najbolja FinTech Konferencija : Gamechanger</p>
+    </div>
+
+    <!-- HERO PART -->
+    <div class="hero">
+      <div class="hero-box">
+        <h1 data-aos="fade-down" data-aos-duration="2000">
+          Najbolja FinTech konferencija u Hrvatskoj i šire.
+        </h1>
+        <p>
+          Gamechanger je vodeći FinTech događaj u regiji koji preoblikuje ulogu
+          koju napredne tehnologije mogu imati u kulturi i društvu.
+        </p>
+        <a href="#">Kupi ulaznice za Gamechanger &rarr;</a>
+      </div>
+    </div>
+
+    <!-- TRENDING -->
+    <div class="splide" id="blog">
+      <h1 id="trending-naslov">TRENDING ON GAMECHANGER</h1>
+      <div class="splide__track">
+        <div class="splide__list">
+          <li class="splide__slide">
+            <img src="slike/article-img1.jpg" />
+            <div class="tekst">
+              <h1>Moraju li konferencije biti dosadne?</h1>
+              <p>
+                Game changer mijenja dinamiku konferencija kakve poznajemo.
+                Svojom festivalskom programskom arhitekturom, u kojoj
+                posjetitelji tijekom konferencijskog dana mogu pratiti programe
+                u 6 odvojenih dvorana i prostora,
+              </p>
+              <a href="article.html">Pročitaj više</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="slike/article-img2.jpg" />
+            <div class="tekst">
+              <h1>Game changer blue print</h1>
+              <p>
+                Zaokružujemo forum objavljivanjem game changer blue print
+                dokumenta. Niz dobro strukturiranih zaključaka usmjerenih na
+                poboljšanje ekosustava i kapaciteta, kao temelja za rast koji će
+                ubrzati procese
+              </p>
+              <a href="article2.html">Pročitaj više</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="slike/article-img3.jpg" />
+            <div class="tekst">
+              <h1>All day. Dj sound</h1>
+              <p>
+                All day. Dj sound Game changer zaokružujemo dobrom zabavom za
+                naše posjetitelje. Relevantan program kojim donosimo svježe
+                glazbeno-scenske trendove, uz matinee party kojim zatvaramo prvi
+                game
+              </p>
+              <a href="article3.html">Pročitaj više</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="slike/article-img4.jpg" />
+            <div class="tekst">
+              <h1>Zašto su gaming i metaverse postali tema?</h1>
+              <p>
+                Znamo da su te teme već prisutne u tehnološkom sektoru, ali
+                kakve su veze s korporativnom zajednicom, oglašivačkim kućama,
+                studentima i svim kreativcima. Što nam dokazuje
+              </p>
+              <a href="article4.html">Pročitaj više</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="slike/article-img5.jpg" />
+            <div class="tekst">
+              <h1>
+                Prva velika gaming / web3 & metaverse konferencija u Hrvatskoj
+                Zagreb 01.12.2022.
+              </h1>
+              <p>
+                Regionalni lideri podijelit će najvažnije globalne trendove.
+                Razgovarat ćemo o krizi na kripto sceni, vraća li se priča o
+                metaverzumu budućnosti u gaming nakon smanjenja obima
+              </p>
+              <a href="article5.html">Pročitaj više</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="slike/article-img6.jpg" />
+            <div class="tekst">
+              <h1>Big match first time on big cinema screen</h1>
+              <p>
+                Prvi put na velikom kino platnu u regiji! Izravni prijenos
+                Hrvatska – Belgija / Game changer CineStar od 16:00 sati Za sve
+                vas koji ste razmišljali propustiti
+              </p>
+              <a href="article6.html">Pročitaj više</a>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <img src="slike/article-img7.jpg" />
+            <div class="tekst">
+              <h1>
+                Blind bird kotizacije za Game changer Zagreb konferenciju, u
+                prodaji putem servisa Entrio starta 15.05.2023.
+              </h1>
+              <p>
+                Uz Blind bird kupnju kotizacije, u prilici ste osigurati svoj
+                modni artikal iz limitirane serije. Ograničeno izdanje modne
+                linije HUMAN AGAINST THE MACHINE. Rezervirajte svoj artikl
+              </p>
+              <a href="article7.html">Pročitaj više</a>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOUNDER -->
+    <div class="founder">
+      <div class="founder-slika">
+        <img src="slike/MOSHED-2023-4-5-7-24-47.jpg" alt="Founder Image" />
+      </div>
+      <div class="founder-tekst">
+        <h3><span>KONFERENCIJE</span></h3>
+        <h1>Vodeće fintech konferencije u regiji</h1>
+        <p>
+          «Cilj Game Changera je stvoriti jedinstveno okruženje koje povezuje
+          digitalne i poslovne lidere s generacijama koje dolaze. Kroz snažan
+          prijenos znanja i iskustva. AI i blokchain, donosi dio odgovora na
+          ključno pitanje, kako tech perfect Storm može raditi za nas. »
+        </p>
+        <a href="#">Više o Gamechangeru &rarr;</a>
+      </div>
+    </div>
+
+    <!-- COLOR BOXES -->
+    <div class="color-boxes" id="događaji">
+      <div class="red-box">
+        <div class="box-text">
+          <h3>ZAGREB | 25.-27.05.2023</h3>
+          <h1 data-aos="fade-right" data-aos-duration="1500">ST.ART UP</h1>
+          <p>
+            ST.ART UP inicira podržava umjetnike u razvoju ambicioznih radova
+            koji primjenjuju nove tehnologije kao medij, alat ili subjekt. Jedan
+            od aspekata projekta je promicanje umjetnosti u izgradnji virtualnog
+            svijeta kako bi se omogućio uvid u umjetnikovu praksu i prošireni
+            pogled na svijet.
+          </p>
+          <a href="#">Kupi Ulaznice &rarr;</a>
+        </div>
+      </div>
+      <div class="blue-box">
+        <div class="box-text">
+          <h3>ZAGREB | 19.10.2023.</h3>
+          <h1 data-aos="fade-left" data-aos-duration="1500">
+            GAME CHANGER KONFERENCIJA VOL 2.
+          </h1>
+          <p>
+            Konferencija Game Changer Pravo Je Mjesto Za Svakoga Tko Želi
+            Naučiti Kako Primijeniti Gamification Proces, AI i Blockchain
+            Tehnologiju U Svom Poslovanju. Game Changer je prva inicijativa koja
+            okuplja lidere iz različitih industrija i specijalizacija u okviru
+            dijaloga na temu razvoja. Programski koncept se sastoji od čak 6
+            dvorana/programa.
+          </p>
+          <a href="#">Kupi Ulaznice &rarr;</a>
+        </div>
+      </div>
+      <div class="red-box">
+        <div class="box-text">
+          <h3>LJUBLJANA | 04.12.2023.</h3>
+          <h1 data-aos="fade-right" data-aos-duration="1500">
+            BOARDROOM FINTECH FORUM BY GAMECHANGER
+          </h1>
+          <p>
+            Boardroom fintech forum nova je zvijezda u usponu u središnjoj
+            europi. Ovogodišnji događaj će okupiti više od 300 posjetitelja - a
+            to je samo početak! Boardroom by game changer prvi je fintech
+            događaj koji svjetlja trendove u industriji, kroz odlučujući utjecaj
+            web3 &amp; ai tehnologija, te primjenu načela gamifikacije u
+            stvaranju fintech proizvoda.
+          </p>
+          <a href="#">Kupi Ulaznice &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="brojke" id="brojke">
+      <div class="brojke-box">
+        <div class="box-box">
+          <div class="tekst-box">
+            <h3><span>BROJKE S PROŠLIH KONFERENCIJA</span></h3>
+            <h1>Konferencije budućnosti.</h1>
+            <p>
+              Naše konferencije s razlogom imaju sve više i više posjetitelja.
+              Kvalitetan izbor govornika, programa, organizacija samo su neki od
+              faktora. Uvjerite se i sami u kvalitetu i vrijednost Gamechanger
+              konferencija.
+            </p>
+          </div>
+
+          <div class="slika-box">
+            <img src="slike/MOSHED-2023-4-5-7-51-13.jpg" id="pc" />
+          </div>
+        </div>
+
+        <div class="brojke-box2">
+          <div class="number-show" class="hidden">
+            <h2>POSJETITELJI:</h2>
+            <span class="num" data-val="750">000</span>
+          </div>
+          <div class="number-show" class="hidden">
+            <h2>PANELISTA:</h2>
+            <span class="num" data-val="80">000</span>
+          </div>
+          <div class="number-show" class="hidden">
+            <h2>MEDIJA:</h2>
+            <span class="num" data-val="45">000</span>
+          </div>
+          <div class="number-show">
+            <h2>PANELA:</h2>
+            <span class="num" data-val="25">000</span>
+          </div>
+          <div class="number-show">
+            <h2>DVORANA:</h2>
+            <span class="num" data-val="5">000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+      <h4>SUBSCRIBE TO OUR NEWLETTER FOR REGULAR UPDATES</h4>
+      <form>
+        <input type="email" placeholder="Unesite vaš email" id="mail" />
+        <input type="submit" value="Pretplati se" id="subscribe" />
+      </form>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="content">
+        <div class="logo-foot">
+          <img src="slike/logo_red.png" id="footlog" />
+        </div>
+
+        <div class="join">
+          <div class="social-links" id="kontakt">
+            <div class="socials">
+              <a
+                href="https://www.instagram.com/gamechanger.hr/"
+                target="_blank"
+                ><i class="fa fa-brands fa-instagram"></i
+              ></a>
+              <a href="mailto:matijavuckovic@gmail.com" target="_blank"
+                ><i class="fa fa-envelope"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/company/gamechangerhr/?trk=public_post_reshare-text&originalSubdomain=hr"
+                target="_blank"
+                ><i class="fa fa-brands fa-linkedin"></i
+              ></a>
+
+              <a href="https://www.facebook.com/gamechanger.hr/" target="_blank"
+                ><i class="fa fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="credit" href="https://ikarus.agency/" target="_blank"
+        ><span>Website created by Ikarus Agency &copy;</span></a
+      >
+    </div>
+    <!-- <span>&amp;copy 2022 IKARUS Agency. All Rights Reserved.</span> -->
+    <!-- SKRIPTE -->
+    <script>
+      var menubutton = document.getElementById("menu-btn");
+      var menuclose = document.getElementById("close-btn");
+      var navigationlist = document.getElementById("navigation-lista");
+      var header = document.getElementById("header");
+      var mobilelogo = document.getElementById("mobile_logo");
+      var btn = document.getElementById("btn");
+
+      menubutton.onclick = function () {
+        navigationlist.style.display = "flex";
+        header.style.flexDirection = "column";
+        menubutton.style.display = "none";
+        menuclose.style.display = "block";
+        mobilelogo.style.width = "50%";
+        header.style.paddingBlock = "2rem";
+        btn.style.display = "flex";
+      };
+      menuclose.onclick = function () {
+        navigationlist.style.display = "none";
+        header.style.flexDirection = "row";
+        menubutton.style.display = "block";
+        menuclose.style.display = "none";
+        mobilelogo.style.width = "100%";
+        header.style.paddingBlock = "0rem";
+        btn.style.display = "none";
+      };
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      AOS.init();
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".team-box"), {
+        max: 25,
+        speed: 1500,
+      });
+    </script>
+
+    <script>
+      var splide = new Splide(".splide", {
+        type: "fade",
+        rewind: true,
+      });
+
+      splide.mount();
+    </script>
+    <script>
+      let valueDisplays = document.querySelectorAll(".num");
+      let interval = 4000;
+
+      valueDisplays.forEach((valueDisplays) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplays.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+          startValue += 1;
+          valueDisplays.textContent = startValue;
+          if (startValue == endValue) {
+            clearInterval(counter);
+          }
+        }, duration);
+      });
+    </script>
+
+    <script src="anime-master/lib/anime.min.js"></script>
+  </body>
+</html>
