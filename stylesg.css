@@ -92,7 +92,7 @@ html {
 
 #close-btn {
   display: none;
-  margin-inline: auto;
+  margin-left: -0.3rem;
   margin-top: 2rem;
 }
 #close-btn img {
