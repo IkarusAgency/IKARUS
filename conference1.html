@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="stylesg.css" />
+    <link rel="stylesheet" href="article.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header" id="header">
+      <div class="logo">
+        <img
+          src="slike/joystick_red.png"
+          alt="Gamechanger Logo"
+          id="rotating_logo"
+        />
+        <img src="slike/logo_red.png" alt="Gamechanger Logo" id="mobile_logo" />
+      </div>
+      <div class="menu">
+        <ul id="navigation-lista">
+          <li><a href="indexg.html">POČETNA</a></li>
+          <li><a href="about.html">O NAMA</a></li>
+          <li><a href="#brojke">BROJKE</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#događaji">DOGAĐAJI</a></li>
+          <li><a href="#media">DRUGI O NAMA</a></li>
+          <li><a href="#kontakt">KONTAKT</a></li>
+
+          <div id="close-btn"><img src="slike/rectangle-xmark.png" /></div>
+        </ul>
+        <div class="button1" id="btn">
+          <button id="tickets">ULAZNICE</button>
+        </div>
+      </div>
+      <div id="menu-btn"><img src="slike/bars-sort(1).png" /></div>
+    </div>
+    <div class="blue-box">
+      <img src="slike/purple-pattern.svg" />
+      <div class="box-text">
+        <h3>ZAGREB | 19.10.2023.</h3>
+        <h1 data-aos="fade-left" data-aos-duration="1500">
+          GAME CHANGER CONFERENCE VOL.2
+        </h1>
+        <p>Vodeći tehnološki Gaming & WEB3 događaj u regiji.</p>
+        <p>
+          Okupit ćemo i integrirati gaming industriju, web 3, kibernetičku
+          sigurnost, umjetnu inteligenciju, e-trgovinu i oglašavanje - sve kako
+          bismo razgovarali o tome kako uhvatiti pravi val uz tehnologiju koja
+          mijenja svijet.
+        </p>
+        <p>
+          Konferencija Game Changer pravo je mjesto za svakoga tko želi naučiti
+          kako primijeniti gamification proces, AI i blockchain tehnologiju u
+          svom poslovanju.
+        </p>
+        <p>
+          Nema boljeg vremena od sada, da napredujete u igri digitalne
+          transformacije!
+        </p>
+        <p>
+          GAME CHANGER NIJE ELITISTIČKI SKUP. GAME CHANGER OKUPLJA PREDSTAVNIKE
+          IT INDUSTRIJE, ZNANOSTI, INSTITUCIJA, POSLOVNIH ZAJEDNICA, UMJETNIKE,
+          STUDENTE, ALI I POJEDINCE KOJI PLANIRAJU SUDJELOVATI U DINAMIČNOM
+          PROCESU TRANSFORMACIJE PREMA GAMING, AI I WEB3 PODRUČJIMA. GAME
+          CHANGER JE PRVA INICIJATIVA KOJA OKUPLJA LIDERE IZ RAZLIČITIH
+          INDUSTRIJA I SPECIJALIZACIJA U OKVIRU DIJALOGA NA TEMU RAZVOJA.
+        </p>
+        <a href="#">Kupi Ulaznice &rarr;</a>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="content">
+        <div class="logo-foot">
+          <img src="slike/logo_red.png" id="footlog" />
+        </div>
+
+        <div class="join">
+          <div class="social-links" id="kontakt">
+            <div class="socials">
+              <a
+                href="https://www.instagram.com/gamechanger.hr/"
+                target="_blank"
+                ><i class="fa fa-brands fa-instagram"></i
+              ></a>
+              <a href="mailto:matijavuckovic@gmail.com" target="_blank"
+                ><i class="fa fa-envelope"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/company/gamechangerhr/?trk=public_post_reshare-text&originalSubdomain=hr"
+                target="_blank"
+                ><i class="fa fa-brands fa-linkedin"></i
+              ></a>
+
+              <a href="https://www.facebook.com/gamechanger.hr/" target="_blank"
+                ><i class="fa fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="credit" href="https://ikarus.agency/" target="_blank"
+        ><span>Website created by Ikarus Agency &copy;</span></a
+      >
+    </div>
+    <!-- <span>&amp;copy 2022 IKARUS Agency. All Rights Reserved.</span> -->
+
+    <script
+      src="https://kit.fontawesome.com/29747a68a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var menubutton = document.getElementById("menu-btn");
+      var menuclose = document.getElementById("close-btn");
+      var navigationlist = document.getElementById("navigation-lista");
+      var header = document.getElementById("header");
+      var mobilelogo = document.getElementById("mobile_logo");
+      var btn = document.getElementById("btn");
+
+      menubutton.onclick = function () {
+        navigationlist.style.display = "flex";
+        header.style.flexDirection = "column";
+        menubutton.style.display = "none";
+        menuclose.style.display = "block";
+        mobilelogo.style.width = "50%";
+        header.style.paddingBlock = "2rem";
+        btn.style.display = "flex";
+      };
+      menuclose.onclick = function () {
+        navigationlist.style.display = "none";
+        header.style.flexDirection = "row";
+        menubutton.style.display = "block";
+        menuclose.style.display = "none";
+        mobilelogo.style.width = "100%";
+        header.style.paddingBlock = "0rem";
+        btn.style.display = "none";
+      };
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      AOS.init();
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true,
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".team-box"), {
+        max: 25,
+        speed: 1500,
+      });
+    </script>
+  </body>
+</html>

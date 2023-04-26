@@ -6,10 +6,10 @@
   justify-content: center;
   margin-inline: auto;
   margin-block: 5rem;
-  background: linear-gradient(black, rgb(58, 2, 2));
+  /* background: linear-gradient(black, rgb(58, 2, 2)); */
+  background: #ab36fe;
   border-radius: 30px;
   padding-block: 2rem;
-  border: solid 2px white;
 }
 .naslov {
   color: white;

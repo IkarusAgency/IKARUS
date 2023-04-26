@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: center;
 }
+.about .hero-box {
+  padding-block: 10rem;
+}
 .naslov {
   display: flex;
   justify-content: center;
