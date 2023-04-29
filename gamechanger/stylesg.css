@@ -343,10 +343,10 @@ html {
 .container-tekst-slika img {
   width: 90%;
 
-  filter: brightness(55%);
+  filter: brightness(35%);
 }
 #trending-naslov {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-block: 2rem;
   text-align: start;
   width: 60%;
@@ -375,11 +375,13 @@ html {
 }
 .tekst h3 {
   margin-block: 1rem;
-  color: #d92525;
+  color: #ab36fe;
+  font-weight: 1000;
 }
 .tekst a {
-  color: #d92525;
+  color: #ab36fe;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 .splide h1 {
   text-align: start;
@@ -546,7 +548,7 @@ html {
   margin-block: 2rem;
 }
 .box-text a {
-  color: white;
+  color: #ab36fe;
   font-weight: 900;
 }
 @media (max-width: 850px) {
@@ -710,7 +712,7 @@ html {
   color: black;
   align-items: center;
   justify-content: center;
-  margin-block: 5rem;
+  margin-top: 10rem;
 }
 .brojke-box {
   width: 90%;

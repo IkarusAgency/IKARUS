@@ -73,16 +73,16 @@
 }
 
 /* INFO */
-.info {
+.informacije {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   margin-inline: auto;
   align-items: center;
   justify-content: center;
   margin-block: 5rem;
 }
-.info h1 {
+.informacije h1 {
   color: white;
   font-size: 3rem;
   text-shadow: 4px 2px #d92525;
@@ -127,7 +127,12 @@
     margin-block: 1rem;
   }
   .icons p {
-    text-align: center;
+    text-align: start;
+    width: 100%;
+  }
+  .icon h3 {
+    width: 100%;
+    text-align: start;
   }
 }
 /* ANIMAIJA */
