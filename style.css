@@ -447,6 +447,8 @@ p.bolded {
   }
   .aboutus-text p {
     font-size: 1.2rem;
+    border-left: solid 5px #ff0050;
+    padding-left: 1rem;
   }
 }
 
